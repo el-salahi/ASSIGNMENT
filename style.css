@@ -1,5 +1,5 @@
 :root {
-    --dark-blue: #22223B;
+    --grey-blue: #22222A;
     --ligher-blue: #4A4E69;
     --green: #818F5D;
     --pink: #C9ADA7;
@@ -8,7 +8,62 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "Quicksand", sans-serif;
-    background-color: var(--ligher-blue);
+    background-color: var(--grey-blue);
     color: var(--cream);
 }
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr 1fr 2fr;
+}
+
+img {
+    grid-column: 1 / 7;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 100%;
+    
+}
+
+h1 {
+    grid-column: 5 / -1;
+    grid-row: 1 / 2;
+    border: solid;
+    
+}
+
+.links {
+    grid-column: 7 / -1;
+    grid-row: 2 / 3;
+    border: solid;
+   
+}
+
+section {
+    grid-column: 7 / -1;
+    grid-row: 3 / 4;
+    border: solid;
+}
+
+input {
+    grid-column: 7 / -1;
+    grid-row: 4 / 5;
+    border: solid;
+}
+
