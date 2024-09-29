@@ -14,6 +14,8 @@ body {
     color: var(--cream);
 }
 
+
+ /* * HEADER */
 header {
     width: 100%;
     height: 60px;
@@ -25,6 +27,8 @@ header {
     height: 50px;
 }
 
+
+/* * MAIN - LAYOUT GRID */
 main {
     width: 100%;
     height: calc(100vh - 60px);
@@ -38,21 +42,48 @@ img {
     grid-row: 1 / 4;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     
 }
 
 h1 {
     grid-column: 5 / -1;
     grid-row: 1 / 2;
-    border: solid;
-    
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 13em;
+    color: var(--green);
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 2px var(--pink);
+    margin: 0;
+
 }
 
 .links {
     grid-column: 7 / -1;
     grid-row: 2 / 3;
     border: solid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.05em;
+    color: var(--cream);
+    text-decoration: none;
    
+}
+
+.vegetable-link {
+    color: var(--cream);
+    text-decoration: none;
+}
+
+#radish-link {
+    font-size: 1.35em;
+    border: 1px solid var(--cream);
+    background-color: var(--green);
+
+    padding: 5px;
 }
 
 section {
