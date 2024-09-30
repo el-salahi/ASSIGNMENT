@@ -88,6 +88,7 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 2fr 1fr 2fr 1fr;
+    gap: 5px;
 }
 
 img {
@@ -100,19 +101,22 @@ img {
     border-bottom-right-radius: 3px;
 }
 
+
 h1 {
-    grid-column: 6 / -1;
+    grid-column: 7 / -1;
     grid-row: 1 / 2;
     font-family: "Bebas Neue", sans-serif;
     font-size: 13.5em;
+    text-align: center;
     color: var(--green);
     letter-spacing: 20px;
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--light-pink), -2px -1px var(--grey-blue);
     margin: 0;
-
 }
 
-.links {
+
+
+/* .links {
     grid-column: 7 / -1;
     grid-row: 2 / 3;
     display: flex;
@@ -121,18 +125,37 @@ h1 {
     align-items: center;
     padding: 10px;
    
+} */
+
+#radish-link {
+    grid-column: 8 / span 1;
+    grid-row: 2 / 3;
+}
+
+#cabbage-link {
+    grid-column: 9 / span 1;
+    grid-row: 2 / 3;
+}
+
+#cucumber-link {
+    grid-column: 10 / span 1;
+    grid-row: 2 / 3;
+}
+
+#aubergine-link {
+    grid-column: 11 / span 1;
+    grid-row: 2 / 3;
 }
 
 .vegetable-link {
     font-size: 1.05em;
     color: var(--cream);
     text-decoration: none;
-}
-
-#radish-link {
-    font-size: 1.35em;
-    border: 1px solid var(--cream);
-    background-color: var(--green);
+    margin: 10px;
+    height: 45%;
+    width: 100px;
+    align-content: center;
+    text-align: center;
     padding: 5px;
     border-radius: 3px;
 }
@@ -163,4 +186,133 @@ input {
     background-color: var(--pink);
     box-shadow: 1px 1px 2px var(--light-blue), -1px -1px 2px var(--light-blue);
 }
+
+
+/* * #main-radish DEFAULT SETTINGS*/
+
+/* ! LINKS */
+
+#radish-link {
+    font-size: 1.25em;
+    border: 1px solid var(--cream);
+    background-color: var(--green);
+    transition-duration: 0.5s;
+}
+
+/* ! IMG */
+
+#radish-img {
+    display: inline-block;
+}
+#cabbage-img {
+    display: none;
+}
+
+#cucumber-img {
+    display: none;
+}
+
+/* ! H1 */
+
+#radish-h1 {
+    display: block;
+}
+#cabbage-h1 {
+    display: none;
+}
+#cucumber-h1 {
+    display: none;
+}
+
+/* * cabbage hover*/
+
+#cabbage-link:hover {
+    font-size: 1.25em;
+    border: 1px solid var(--cream);
+    background-color: var(--green);
+    transition-duration: 0.5s;
+}
+
+/* highlight off of radish*/
+main:has(#cabbage-link:hover) #radish-link {
+    font-size: 1.05em;
+    border: none;
+    background-color: var(--grey-blue);
+    transition-duration: 0.5s;
+}
+
+/* img change */
+
+main:has(#cabbage-link:hover) #radish-img {
+    display: none;
+}
+
+main:has(#cabbage-link:hover) #cabbage-img {
+    display: inline-block;
+}
+
+main:has(#cabbage-link:hover) #cucumber-img {
+    display: none;
+}
+
+/*  h1 change */
+
+main:has(#cabbage-link:hover) #radish-h1 {
+    display: none;
+}
+
+main:has(#cabbage-link:hover) #cabbage-h1 {
+    display: block;  
+}
+
+main:has(#cabbage-link:hover) #cucumber-h1 {
+    display: none;
+}
+
+/* * cucumber hover*/
+
+#cucumber-link:hover {
+    font-size: 1.25em;
+    border: 1px solid var(--cream);
+    background-color: var(--green);
+    transition-duration: 0.5s;
+}
+
+/* hightlight off of radish*/
+main:has(#cucumber-link:hover) #radish-link {
+    font-size: 1.05em;
+    border: none;
+    background-color: var(--grey-blue);
+    transition-duration: 0.5s;
+}
+
+/* img change */
+
+main:has(#cucumber-link:hover) #radish-img {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cabbage-img {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cucumber-img {
+    display: inline-block;
+}
+
+/*  h1 change */
+
+main:has(#cucumber-link:hover) #radish-h1 {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cabbage-h1 {
+    display: none; 
+}
+
+main:has(#cucumber-link:hover) #cucumber-h1 {
+    display: block; 
+}
+
+
 
