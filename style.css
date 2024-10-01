@@ -93,7 +93,7 @@ main {
 
 img {
     grid-column: 1 / 7;
-    grid-row: 1 / 6;
+    grid-row: 1 / 7;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -165,7 +165,7 @@ h1 {
 
 section {
     grid-column: 7 / -1;
-    grid-row: 3 / -2;
+    grid-row: 3 / -3;
     display: flex;
     margin-top: 20px;
     flex-flow: column nowrap;   
@@ -175,8 +175,45 @@ section {
 }
 
 
-p {
+.menu-p {
     padding: 0 10%;
+}
+
+footer {
+    grid-column: span 12;
+    grid-row: -2 / -1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: inline;
+    width: 15%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.fab {
+    padding: 10px;
+    width: 20px;
+    text-align: center;
+    margin-left: 5%;
+    border-radius: 50%;
+    background-color: var(--grey-blue);
+    color: var(--pink);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid var(--pink);
+}
+
+.fab:hover {
+    background-color: var(--light-pink);
+    border: 3px solid var(--radish-pink);
+    color: var(--grey-blue);
+    transition-duration: 0.5s;
 }
 
 /* input taken out on menu page */
@@ -195,7 +232,7 @@ p {
 
 
 /* 
-/* * Option 2 #MAIN MENU SETTINGS - nothing highlighted*/
+/* * #MAIN MENU SETTINGS - nothing highlighted*/
 
 /* ! IMG */
 #main-menu-img {
@@ -204,7 +241,6 @@ p {
 #radish-img, #cabbage-img, #cucumber-img, #parsnip-img {
     display: none;
 }
-
 
 
 /* ! H1, SECTION H3 & P */
@@ -275,7 +311,6 @@ main:has(#radish-link:hover) #radish-p {
 main:has(#cabbage-link:hover) #main-menu-img, main:has(#cabbage-link:hover) #radish-img, main:has(#cabbage-link:hover) #cucumber-img, main:has(#cabbage-link:hover) #parsnip-img {
     display: none;
 }
-
 main:has(#cabbage-link:hover) #cabbage-img {
     display: inline-block;
 }
