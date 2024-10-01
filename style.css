@@ -233,73 +233,38 @@ p {
 
 /* * RADISH HOVER - affects <link> <img> <h1> <h3> <p>*/
 /* img change */
-main:has(#radish-link:hover) #main-menu-img {
+main:has(#radish-link:hover) #main-menu-img, main:has(#radish-link:hover) #cabbage-img, main:has(#radish-link:hover) #cucumber-img, main:has(#radish-link:hover) #parsnip-img {
     display: none;
 }
 main:has(#radish-link:hover) #radish-img {
     display: inline-block;
 }
-main:has(#radish-link:hover) #cabbage-img {
-    display: none;
-}
-main:has(#radish-link:hover) #cucumber-img {
-    display: none;
-}
-main:has(#radish-link:hover) #parsnip-img {
-    display: none;
-}
+
 
 /*  h1 change */
-main:has(#radish-link:hover) #main-menu-h1 {
+main:has(#radish-link:hover) #main-menu-h1, main:has(#radish-link:hover) #cabbage-h1, main:has(#radish-link:hover) #cucumber-h1, main:has(#radish-link:hover) #parsnip-h1 {
     display: none;
 }
 main:has(#radish-link:hover) #radish-h1 {
     display: block;
 }
-main:has(#radish-link:hover) #cabbage-h1 {
-    display: none;  
-}
-main:has(#radish-link:hover) #cucumber-h1 {
-    display: none;
-}
-main:has(#radish-link:hover) #parsnip-h1 {
-    display: none;
-}
 
 /*  h3 change */
 
-main:has(#radish-link:hover) #main-menu-h3 {
+main:has(#radish-link:hover) #main-menu-h3, main:has(#radish-link:hover) #cabbage-h3, main:has(#radish-link:hover) #cucumber-h3, main:has(#radish-link:hover) #parsnip-h3 {
     display: none;
 }
 main:has(#radish-link:hover) #radish-h3 {
     display: block;
 }
-main:has(#radish-link:hover) #cabbage-h3 {
-    display: none;  
-}
-main:has(#radish-link:hover) #cucumber-h3 {
-    display: none;
-}
-main:has(#radish-link:hover) #parsnip-h3 {
-    display: none;
-}
 
 /*  p change */
 
-main:has(#radish-link:hover) #main-menu-p {
+main:has(#radish-link:hover) #main-menu-p, main:has(#radish-link:hover) #cabbage-p, main:has(#radish-link:hover) #cucumber-p, main:has(#radish-link:hover) #parsnip-p {
     display: none;
 }
 main:has(#radish-link:hover) #radish-p {
     display: block;
-}
-main:has(#radish-link:hover) #cabbage-p {
-    display: none;  
-}
-main:has(#radish-link:hover) #cucumber-p {
-    display: none;
-}
-main:has(#radish-link:hover) #parsnip-p {
-    display: none;
 }
 
 
@@ -307,156 +272,77 @@ main:has(#radish-link:hover) #parsnip-p {
 
 /* img change */
 
-main:has(#cabbage-link:hover) #main-menu-img {
-    display: none;
-}
-main:has(#cabbage-link:hover) #radish-img {
-    display: none;
-}
-main:has(#cabbage-link:hover) #cabbage-img {
-    display: inline-block;
-}
-main:has(#cabbage-link:hover) #cucumber-img {
-    display: none;
-}
-main:has(#cabbage-link:hover) #parsnip-img {
+main:has(#cabbage-link:hover) #main-menu-img, main:has(#cabbage-link:hover) #radish-img, main:has(#cabbage-link:hover) #cucumber-img, main:has(#cabbage-link:hover) #parsnip-img {
     display: none;
 }
 
-/*  h1 change */
-main:has(#cabbage-link:hover) #main-menu-h1 {
-    display: none;
+main:has(#cabbage-link:hover) #cabbage-img {
+    display: inline-block;
 }
-main:has(#cabbage-link:hover) #radish-h1 {
+
+/*  h1 change */
+main:has(#cabbage-link:hover) #main-menu-h1, main:has(#cabbage-link:hover) #radish-h1, main:has(#cabbage-link:hover) #cucumber-h1, main:has(#cabbage-link:hover) #parsnip-h1 {
     display: none;
 }
 main:has(#cabbage-link:hover) #cabbage-h1 {
     display: block;  
 }
-main:has(#cabbage-link:hover) #cucumber-h1 {
-    display: none;
-}
-main:has(#cabbage-link:hover) #parsnip-h1 {
-    display: none;
-}
 
 /*  h3 change */
-main:has(#cabbage-link:hover) #main-menu-h3 {
-    display: none;
-}
-main:has(#cabbage-link:hover) #radish-h3 {
+main:has(#cabbage-link:hover) #main-menu-h3, main:has(#cabbage-link:hover) #radish-h3, main:has(#cabbage-link:hover) #cucumber-h3, main:has(#cabbage-link:hover) #parsnip-h3 {
     display: none;
 }
 main:has(#cabbage-link:hover) #cabbage-h3 {
     display: block;  
 }
-main:has(#cabbage-link:hover) #cucumber-h3 {
-    display: none;
-}
-main:has(#cabbage-link:hover) #parsnip-h3 {
-    display: none;
-}
 
 /*  p change */
-main:has(#cabbage-link:hover) #main-menu-p {
-    display: none;
-}
-main:has(#cabbage-link:hover) #radish-p {
+main:has(#cabbage-link:hover) #main-menu-p, main:has(#cabbage-link:hover) #radish-p, main:has(#cabbage-link:hover) #cucumber-p, main:has(#cabbage-link:hover) #parsnip-p {
     display: none;
 }
 main:has(#cabbage-link:hover) #cabbage-p {
     display: block;  
 }
-main:has(#cabbage-link:hover) #cucumber-p {
-    display: none;
-}
-main:has(#cabbage-link:hover) #parsnip-p {
-    display: none;
-}
 
 /* * CUCUMBER HOVER - affects <link> <img> <h1> <h3> <p>*/
 
 /* img change */
-main:has(#cucumber-link:hover) #main-menu-img {
-    display: none;
-}
-main:has(#cucumber-link:hover) #radish-img {
-    display: none;
-}
-main:has(#cucumber-link:hover) #cabbage-img {
+main:has(#cucumber-link:hover) #main-menu-img, main:has(#cucumber-link:hover) #radish-img, main:has(#cucumber-link:hover) #cabbage-img, main:has(#cucumber-link:hover) #parsnip-img {
     display: none;
 }
 main:has(#cucumber-link:hover) #cucumber-img {
     display: inline-block;
 }
-main:has(#cucumber-link:hover) #parsnip-img {
-    display: none;
-}
 
 /*  h1 change */
-main:has(#cucumber-link:hover) #main-menu-h1 {
-    display: none;
-}
-main:has(#cucumber-link:hover) #radish-h1 {
-    display: none;
-}
-main:has(#cucumber-link:hover) #cabbage-h1 {
+main:has(#cucumber-link:hover) #main-menu-h1, main:has(#cucumber-link:hover) #radish-h1, main:has(#cucumber-link:hover) #cabbage-h1, main:has(#cucumber-link:hover) #parsnip-h1 {
     display: none;
 }
 main:has(#cucumber-link:hover) #cucumber-h1 {
     display: block; 
 }
-main:has(#cucumber-link:hover) #parsnip-h1 {
-    display: none;
-}
 
 /*  h3 change */
-main:has(#cucumber-link:hover) #main-menu-h3 {
-    display: none;
-}
-main:has(#cucumber-link:hover) #radish-h3 {
-    display: none;
-}
-main:has(#cucumber-link:hover) #cabbage-h3 {
+main:has(#cucumber-link:hover) #main-menu-h3, main:has(#cucumber-link:hover) #radish-h3, main:has(#cucumber-link:hover) #cabbage-h3, main:has(#cucumber-link:hover) #parsnip-h3 {
     display: none;
 }
 main:has(#cucumber-link:hover) #cucumber-h3 {
     display: block; 
 }
-main:has(#cucumber-link:hover) #parsnip-h3 {
-    display: none;
-}
+
 
 /*  p change */
-main:has(#cucumber-link:hover) #main-menu-p {
-    display: none;
-}
-main:has(#cucumber-link:hover) #radish-p {
-    display: none;
-}
-main:has(#cucumber-link:hover) #cabbage-p {
+main:has(#cucumber-link:hover) #main-menu-p, main:has(#cucumber-link:hover) #radish-p, main:has(#cucumber-link:hover) #cabbage-p, main:has(#cucumber-link:hover) #parsnip-p {
     display: none;
 }
 main:has(#cucumber-link:hover) #cucumber-p {
     display: block; 
 }
-main:has(#cucumber-link:hover) #parsnip-p {
-    display: none;
-}
 
 /* * PARSNIP HOVER - affects <link> <img> <h1> <h3> <p>*/
 
 /* img change */
-main:has(#parsnip-link:hover) #main-menu-img {
-    display: none;
-}
-main:has(#parsnip-link:hover) #radish-img {
-    display: none;
-}
-main:has(#parsnip-link:hover) #cabbage-img {
-    display: none;
-}
-main:has(#parsnip-link:hover) #cucumber-img {
+main:has(#parsnip-link:hover) #main-menu-img, main:has(#parsnip-link:hover) #radish-img, main:has(#parsnip-link:hover) #cabbage-img, main:has(#parsnip-link:hover) #cucumber-img {
     display: none;
 }
 main:has(#parsnip-link:hover) #parsnip-img {
@@ -464,51 +350,24 @@ main:has(#parsnip-link:hover) #parsnip-img {
 }
 
 /*  h1 change */
-main:has(#parsnip-link:hover) #main-menu-h1 {
+main:has(#parsnip-link:hover) #main-menu-h1, main:has(#parsnip-link:hover) #radish-h1, main:has(#parsnip-link:hover) #cabbage-h1, main:has(#parsnip-link:hover) #cucumber-h1 {
     display: none;
-}
-main:has(#parsnip-link:hover) #radish-h1 {
-    display: none;
-}
-main:has(#parsnip-link:hover) #cabbage-h1 {
-    display: none; 
-}
-main:has(#parsnip-link:hover) #cucumber-h1 {
-    display: none; 
 }
 main:has(#parsnip-link:hover) #parsnip-h1 {
     display: block; 
 }
 
 /*  h3 change */
-main:has(#parsnip-link:hover) #main-menu-h3 {
+main:has(#parsnip-link:hover) #main-menu-h3, main:has(#parsnip-link:hover) #radish-h3, main:has(#parsnip-link:hover) #cabbage-h3, main:has(#parsnip-link:hover) #cucumber-h3 {
     display: none;
-}
-main:has(#parsnip-link:hover) #radish-h3 {
-    display: none;
-}
-main:has(#parsnip-link:hover) #cabbage-h3 {
-    display: none; 
-}
-main:has(#parsnip-link:hover) #cucumber-h3 {
-    display: none; 
 }
 main:has(#parsnip-link:hover) #parsnip-h3 {
     display: block; 
 }
 
 /*  p change */
-main:has(#parsnip-link:hover) #main-menu-p {
+main:has(#parsnip-link:hover) #main-menu-p, main:has(#parsnip-link:hover) #radish-p, main:has(#parsnip-link:hover) #cabbage-p, main:has(#parsnip-link:hover) #cucumber-p {
     display: none;
-}
-main:has(#parsnip-link:hover) #radish-p {
-    display: none;
-}
-main:has(#parsnip-link:hover) #cabbage-p {
-    display: none; 
-}
-main:has(#parsnip-link:hover) #cucumber-p {
-    display: none; 
 }
 main:has(#parsnip-link:hover) #parsnip-p {
     display: block; 
