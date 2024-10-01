@@ -221,21 +221,23 @@ p {
 }
 
 
-/* ! H1 */
+/* ! H1, SECTION H3 & P */
 
-#radish-h1 {
+#radish-h1, #radish-h3, #radish-p {
     display: block;
 }
-#cabbage-h1 {
+#cabbage-h1, #cabbage-h3, #cabbage-p {
     display: none;
 }
-#cucumber-h1 {
+#cucumber-h1, #cucumber-h3, #cucumber-p {
     display: none;
 }
 
-#parsnip-h1 {
+#parsnip-h1, #parsnip-h3, #parsnip-p {
     display: none;
 }
+
+
 
 /* * CABBAGE hover*/
 
@@ -290,6 +292,42 @@ main:has(#cabbage-link:hover) #parsnip-h1 {
     display: none;
 }
 
+/*  h3 change */
+
+main:has(#cabbage-link:hover) #radish-h3 {
+    display: none;
+}
+
+main:has(#cabbage-link:hover) #cabbage-h3 {
+    display: block;  
+}
+
+main:has(#cabbage-link:hover) #cucumber-h3 {
+    display: none;
+}
+
+main:has(#cabbage-link:hover) #parsnip-h3 {
+    display: none;
+}
+
+/*  p change */
+
+main:has(#cabbage-link:hover) #radish-p {
+    display: none;
+}
+
+main:has(#cabbage-link:hover) #cabbage-p {
+    display: block;  
+}
+
+main:has(#cabbage-link:hover) #cucumber-p {
+    display: none;
+}
+
+main:has(#cabbage-link:hover) #parsnip-p {
+    display: none;
+}
+
 /* * CUCUMBER hover*/
 
 #cucumber-link:hover {
@@ -331,7 +369,7 @@ main:has(#cucumber-link:hover) #radish-h1 {
     display: none;
 }
 
-main:has(#cucumber-link:hover) #cabbage-img {
+main:has(#cucumber-link:hover) #cabbage-h1 {
     display: none;
 }
 
@@ -339,7 +377,43 @@ main:has(#cucumber-link:hover) #cucumber-h1 {
     display: block; 
 }
 
-main:has(#cucumber-link:hover) #parsnip-img {
+main:has(#cucumber-link:hover) #parsnip-h1 {
+    display: none;
+}
+
+/*  h3 change */
+
+main:has(#cucumber-link:hover) #radish-h3 {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cabbage-h3 {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cucumber-h3 {
+    display: block; 
+}
+
+main:has(#cucumber-link:hover) #parsnip-h3 {
+    display: none;
+}
+
+/*  p change */
+
+main:has(#cucumber-link:hover) #radish-p {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cabbage-p {
+    display: none;
+}
+
+main:has(#cucumber-link:hover) #cucumber-p {
+    display: block; 
+}
+
+main:has(#cucumber-link:hover) #parsnip-p {
     display: none;
 }
 
@@ -393,5 +467,41 @@ main:has(#parsnip-link:hover) #cucumber-h1 {
 }
 
 main:has(#parsnip-link:hover) #parsnip-h1 {
+    display: block; 
+}
+
+/*  h3 change */
+
+main:has(#parsnip-link:hover) #radish-h3 {
+    display: none;
+}
+
+main:has(#parsnip-link:hover) #cabbage-h3 {
+    display: none; 
+}
+
+main:has(#parsnip-link:hover) #cucumber-h3 {
+    display: none; 
+}
+
+main:has(#parsnip-link:hover) #parsnip-h3 {
+    display: block; 
+}
+
+/*  p change */
+
+main:has(#parsnip-link:hover) #radish-p {
+    display: none;
+}
+
+main:has(#parsnip-link:hover) #cabbage-p {
+    display: none; 
+}
+
+main:has(#parsnip-link:hover) #cucumber-p {
+    display: none; 
+}
+
+main:has(#parsnip-link:hover) #parsnip-p {
     display: block; 
 }
