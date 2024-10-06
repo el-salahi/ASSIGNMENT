@@ -30,9 +30,9 @@ h1, h2 {
 
 section {
     width: 100%;
-    height: calc(100vh - 130px);
-    margin-top: 80px;
-    margin-bottom: 50px;
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 
@@ -79,23 +79,38 @@ nav {
     align-items: center;
 }
 
-.nav-link {
+.nav-link, .drop-heading {
     color: var(--cream);
     text-decoration: none;
     font-size: 1.15em;
     padding: 5px;
 }
 
-.nav-link:hover {
+.nav-link:hover, .drop-heading:hover {
     border-radius: 3px;
     background-color: var(--pink);
     color: var(--grey-blue);
     font-weight: 700;
     transition-duration: 1s;
+    cursor: pointer;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(34, 34, 42, 0.7);
+    color: var(--cream);
+    transition-duration: 1s;
+}
+
+.dropdown:hover .drop-content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
 }
 
 
-/* * WELCOME */
+/* * WELCOME - LAYOUT GRID*/
 
 #welcome {
     display: grid;
@@ -103,7 +118,6 @@ nav {
     grid-template-rows: repeat(6, 1fr);
     gap: 5px;
     background-color: var(--pink);
-    /* overflow: auto; */
 }
 
 #welcome h1 {
@@ -343,6 +357,23 @@ main:has(#parsnip-link:hover) img.parsnip {
 main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsnip, main:has(#parsnip-link:hover) p.parsnip {
     display: block; 
 }
+
+
+/* * PRICES  */
+
+.prices {
+    background-color: #E13358;
+    display: flex;
+    flex-flow: row;
+}
+
+/* *RADISH PRICES  */
+
+/* *CABBAGE PRICES  */
+
+/* *CUCUMBER PRICES  */
+
+/* *PARSNIP PRICES  */
 
 /* * FOOTER */
 footer {
