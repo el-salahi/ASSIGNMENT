@@ -20,6 +20,7 @@ body {
     font-family: "Quicksand", sans-serif;
     color: var(--cream);
     letter-spacing: 1px;
+    /* ? Do I want scroll, or just navigation by nav bar? */
     overflow: auto;
     background-color: var(--light-blue);
 }
@@ -215,6 +216,7 @@ li {
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--light-pink), -2px -1px var(--grey-blue);
 }
 
+/* TODO Add nav functionality to veg links to appropriate price pages */
 .vegetable-link {
     font-size: 1.05em;
     color: var(--cream);
@@ -227,7 +229,6 @@ li {
     transition-duration: 0.5s;
 }
 
-/* * <!-- * Option 2 layout - vegetable links in individual grid columns spanning 1fr each 7 / -1 --> */
 #radish-link {
     grid-column: 8 / span 1;
     grid-row: 2 / 3;
@@ -268,23 +269,6 @@ detail > p {
     padding: 0 20%;
 }
 
-
-/* input taken out on menu page */
-
-/* input {
-    width: 45%;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    background-color: var(--pink);
-    box-shadow: 1px 1px 2px var(--light-blue), -1px -1px 2px var(--light-blue);
-} */
-
-
-/* 
 /* * #MAIN MENU SETTINGS for display*/
 
 /* ! DEFAULT - main-menu elements display */
@@ -377,7 +361,23 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     letter-spacing: 20px;
 }
 
-/* *RADISH PRICES  */
+/* TODO input taken out on main-menu section - to be added to price pages */
+
+/* input {
+    width: 45%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: var(--pink);
+    box-shadow: 1px 1px 2px var(--light-blue), -1px -1px 2px var(--light-blue);
+} */
+
+/* TODO Styling for price tiles needs to be added - collective and individual styling */
+
+/* *RADISH PRICE  */
 
 #radish-price {
     background-color: var(--green);
@@ -387,7 +387,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--light-pink), -2px -1px var(--grey-blue);
 }
 
-/* *CABBAGE PRICES  */
+/* *CABBAGE PRICE  */
 
 #cabbage-price {
     background-color: #C0A27A;
@@ -397,7 +397,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--light-pink), -2px -1px var(--grey-blue);
 }
 
-/* *CUCUMBER PRICES  */
+/* *CUCUMBER PRICE  */
 
 #cucumber-price {
     background-color: #8EABC7;
@@ -407,7 +407,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--light-pink), -2px -1px var(--grey-blue);
 }
 
-/* *PARSNIP PRICES  */
+/* *PARSNIP PRICE */
 
 #parsnip-price {
     background-color: #F3C063;
@@ -459,3 +459,6 @@ footer {
     transition-duration: 0.5s;
 }
 
+/* TODO Add section with a <form> for sign-up */
+
+/* TODO Add media queries with appropriate break points to make responsive */
