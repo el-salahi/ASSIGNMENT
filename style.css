@@ -54,6 +54,7 @@ header {
     background-color: var(--grey-blue);
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo-circle {
@@ -364,19 +365,27 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-align: center;
     align-content: center;
     letter-spacing: 20px;
-    border: solid;
 }
 
 .prices h2 {
     font-size: 2em;
-    border: solid;
     text-align: center;
 }
 
-.price-tile-container {
+.wrapper {
     width: 100%;
     height: 60%;
-    background: orange;
+}
+
+.background-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    overflow: hidden;
+} 
+.price-tile-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -384,12 +393,22 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     gap: 3em;
 }
 
+
+.mask-left {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 1) 35%);
+}
+
+.mask-right {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 1) 35%);
+}
+
+
 .price-title {
     width: 18%;
     /* min-width: 350px; */
     height: 85%;
     background-color: #4A4E69;
-
+    z-index: 0;
 }
 /* TODO input taken out on main-menu section - to be added to price pages */
 
@@ -417,6 +436,11 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--radish-pink), -2px -1px var(--grey-blue);
 }
 
+#radish-background-container {
+    background-image: url(assets/radish-rotate.jpg);
+    background-position: 0% 50%
+}
+
 /* *CABBAGE PRICE  */
 
 #cabbage-price {
@@ -425,6 +449,11 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
 #cabbage-price > h1 {
     color: var(--cabbage-green);
     text-shadow: 1px 2px 2px var(--grey-blue), 4px 4px 2px var(--burnt-orange), -2px -1px var(--grey-blue);
+}
+
+#cabbage-background-container {
+    background-image: url("assets/Cabbage-rotate.jpg");
+    /* background-position: 200% 50%; */
 }
 
 /* *CUCUMBER PRICE  */
@@ -437,6 +466,10 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-shadow: 1px 2px 2px var(--cabbage-green), 4px 4px 2px var(--light-blue), -2px -1px var(--grey-blue);
 }
 
+#cucumber-background-container {
+    background-image: url("https://static01.nyt.com/images/2019/01/15/dining/mrs-cucumber-salad-with-soy-ginger-and-garlic/mrs-cucumber-salad-with-soy-ginger-and-garlic-superJumbo.jpg");
+}
+
 /* *PARSNIP PRICE */
 
 #parsnip-price {
@@ -445,6 +478,11 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
 #parsnip-price > h1 {
     color: var(--cream);
     text-shadow: 1px 2px 2px var(--brown), 4px 4px 2px var(--burnt-orange), -2px -1px var(--grey-blue);
+}
+
+#parsnip-background-container {
+    background-image: url("https://assets.bonappetit.com/photos/5bc1017060f9282c89837823/4:3/w_1832,h_1374,c_limit/parsnip-confit-with-pickled-currants.jpg");
+    background-position: 110% 50%;
 }
 
 /* * FOOTER */
