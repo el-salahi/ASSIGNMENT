@@ -1,4 +1,4 @@
-/* * GENERAL */
+ /* * GENERAL */
 
 :root {
     --grey-blue: #22222A;
@@ -223,7 +223,6 @@ li {
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--light-pink), -2px -1px var(--grey-blue);
 }
 
-/* TODO Add nav functionality to veg links to appropriate price pages */
 .vegetable-link {
     font-size: 1.05em;
     color: var(--cream);
@@ -359,7 +358,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     align-items: center;
 }
 
-.prices h1 {
+.prices-heading {
     font-size: 8em;
     line-height: 1;
     text-align: center;
@@ -367,7 +366,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     letter-spacing: 20px;
 }
 
-.prices h2 {
+.prices-subheading {
     font-size: 2em;
     text-align: center;
 }
@@ -383,7 +382,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     position: absolute;
     overflow: hidden;
 } 
-.price-tile-container {
+.subscription-option-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -393,7 +392,6 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     gap: 3em;
 }
 
-
 .mask-left {
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 1) 35%);
 }
@@ -402,12 +400,11 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 1) 35%);
 }
 
-
-.price-title {
+.subscription-option-tile {
     width: 18%;
     /* min-width: 350px; */
     height: 85%;
-    background-color: #4A4E69;
+    background-color: rgba(74, 78, 105, 0.7);
     z-index: 0;
 }
 /* TODO input taken out on main-menu section - to be added to price pages */
@@ -431,7 +428,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
 #radish-price {
     background-color: var(--green);
 }
-#radish-price > h1 {
+#radish-heading {
     color: var(--light-pink);
     text-shadow: 1px 2px 2px var(--light-blue), 4px 4px 2px var(--radish-pink), -2px -1px var(--grey-blue);
 }
@@ -446,7 +443,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
 #cabbage-price {
     background-color: var(--brown);
 }
-#cabbage-price > h1 {
+#cabbage-heading {
     color: var(--cabbage-green);
     text-shadow: 1px 2px 2px var(--grey-blue), 4px 4px 2px var(--burnt-orange), -2px -1px var(--grey-blue);
 }
@@ -461,7 +458,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
 #cucumber-price {
     background-color: var(--cucumber-blue);
 }
-#cucumber-price > h1 {
+#cucumber-heading {
     color:var(--mint-green);
     text-shadow: 1px 2px 2px var(--cabbage-green), 4px 4px 2px var(--light-blue), -2px -1px var(--grey-blue);
 }
@@ -475,7 +472,7 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
 #parsnip-price {
     background-color: var(--parsnip-yellow);
 }
-#parsnip-price > h1 {
+#parsnip-heading {
     color: var(--cream);
     text-shadow: 1px 2px 2px var(--brown), 4px 4px 2px var(--burnt-orange), -2px -1px var(--grey-blue);
 }
