@@ -348,13 +348,13 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     display: block; 
 }
 
-/* TODO tweek colours for price pages. add to root pallet */
+
 /* * PRICES  */
 
 .prices {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -364,10 +364,18 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     text-align: center;
     align-content: center;
     letter-spacing: 20px;
+    border: solid;
 }
 
 .prices-subheading {
     font-size: 2em;
+    text-align: center;
+    border: solid;
+}
+
+.prices-description {
+    border: solid;
+    width: 40%;
     text-align: center;
 }
 
@@ -400,12 +408,34 @@ main:has(#parsnip-link:hover) h1.parsnip, main:has(#parsnip-link:hover) h3.parsn
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 1) 35%);
 }
 
+/* * */
 .subscription-option-tile {
     width: 18%;
-    /* min-width: 350px; */
     height: 85%;
     background-color: rgba(74, 78, 105, 0.7);
+    padding: 15px;
     z-index: 0;
+}
+
+.tile-h2 {
+    text-align: center;
+    border: solid;
+}
+
+.tile-description {
+    text-align: center;
+}
+
+.tile-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bold {
+    font-weight: 600;
 }
 /* TODO input taken out on main-menu section - to be added to price pages */
 
